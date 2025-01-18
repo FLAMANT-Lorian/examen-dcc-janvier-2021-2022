@@ -1,4 +1,5 @@
 @use 'sass:math';
+@use "../settings/vars" as *;
 
 html {
   font-size: 62.5%; // will work when user change browser font
@@ -160,11 +161,11 @@ body {
       box-shadow: none;
       border: none;
       padding: math.div($spacing-unit, 2);
-      border-radius: $border-radius/3;
+      border-radius: math.div($border-radius, 3);
     }
 
     &--search {
-      margin-top: $spacing-unit/2;
+      margin-top: $spacing-unit--small;
       margin-bottom: $spacing-unit;
       border: 1px solid $main-color;
       border-radius: 5px;

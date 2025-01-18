@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" href="icon.png">
     <link rel="stylesheet" href="src/sass/main.scss">
     <meta name="theme-color" content="#fafafa">
-    <script defer src="src/js/main.js"></script>
+    <script defer type="module" src="src/js/main.js"></script>
 </head>
 
 <body class="">
@@ -23,8 +23,8 @@
 <h1 class="main-header">Tymper</h1>
 <div class="container">
     <div class="information box box--small">
-        <p class="information__score" data-text="Score&nbsp: "></p>
-        <p class="information__time" data-text="Temps restant pour cette carte&nbsp: "></p>
+        <p class="information__score" data-text="Score : "></p>
+        <p class="information__time" data-max-time="20" data-text="Temps restant pour cette carte : "></p>
     </div>
     <form action="#" id="play-again" class="play box play--again box play--again--hidden" method="get">
         <input class="play__item play__item--submit" type="submit" value="Recommencer">
